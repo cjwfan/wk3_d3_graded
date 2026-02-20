@@ -12,13 +12,13 @@ jsonForm.addEventListener("submit", function (event) {
 
   try {
     const items = JSON.parse(jsonForm.jsonInput.value);
-    // console.log(items);
-    // output.textContent = items[0];
-    // output2.textContent = items[1];
-    // output3.textContent = items[2];
+    console.log(items);
+    output.textContent = items[0];
+    output2.textContent = items[1];
+    output3.textContent = items[2];
   } catch (error) {
-    // output.textContent = "There's a typo in the JSON";
-    // output2.textContent = "";
-    // output3.textContent = "";
+    output.textContent = "There's a typo in the JSON";
+    output2.textContent = "";
+    output3.textContent = "";
   }
 });
